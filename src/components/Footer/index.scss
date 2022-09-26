@@ -1,0 +1,40 @@
+@import '@/style/global.scss';
+.footer-wrap {
+  flex-shrink: 0;
+  @include flex();
+  @include flex-center();
+  background-color: rgb(54, 52, 50);
+  .footer-content {
+    @include flex();
+    width: 1200px;
+    padding: 20px 0;
+    > div {
+      margin: 0 10px;
+      width: 280px;
+      h3 {
+        color: #FFFFFF;
+      }
+      .footer-child-wrap {
+        width: 280px;
+        .footer-child-module {
+          color: rgba(#FFFFFF, 0.8);
+          text-align: left;
+          font-size: 14px;
+          span {
+            @include flex();
+          }
+        }
+      }
+      .flex {
+        @include flex();
+        .footer-child-module {
+          margin-right: 10px;
+          .iconfont {
+            font-size: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '@/style/global.scss';
+.about-us-content-card {
+  @include flex();
+  @include flex-between();
+  padding: 20px 100px;
+  &.img-left-layout {
+    @include flex-row-reverse();
+  }
+  .text {
+    width: 560px;
+    h3 {
+      padding: 10px 0 20px 0;
+    }
+  }
+  .img {
+    width: 300px;
+    height: 200px;
+    .img-list-wrap {
+      @include flex();
+      >:last-child {
+        margin-left: 20px;
+      }
+    }
+    .el-image {
+      max-height: 200px;
+      width: 100%;
+      height: 100%;
+      // display: block;
+      vertical-align: bottom;
+    }
+  }
+}
